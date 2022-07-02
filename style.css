@@ -31,18 +31,18 @@ body {
 .button-wrap {
   bottom: -80px;
 }
-.button-wrap:hover .button:nth-of-type(1) {
+.button-wrap .button.expanded:nth-of-type(1) {
   transform: translateY(-50px);
 }
-.button-wrap:hover .button:nth-of-type(2) {
+.button-wrap .button.expanded:nth-of-type(2) {
   transform: translateY(-150px);
   width: 100%;
 }
-.button-wrap:hover .button:nth-of-type(3) {
+.button-wrap .button.expanded:nth-of-type(3) {
   transform: translateY(-250px);
   width: 100%;
 }
-.button-wrap:hover .button:nth-of-type(4) {
+.button-wrap .button.expanded:nth-of-type(4) {
   transform: translateY(-350px);
   width: 100%;
 }
@@ -59,34 +59,6 @@ body {
 }
 .button:hover {
   cursor: pointer;
-}
-.button.green {
-  background: #7fc77e;
-  color: #537a52;
-}
-.button.green:hover {
-  background: #77e475;
-}
-.button.yellow {
-  background: #eccc1d;
-  color: #887d40;
-}
-.button.yellow:hover {
-  background: #ffe557;
-}
-.button.blue {
-  background: #6dbde2;
-  color: #10678f;
-}
-.button.blue:hover {
-  background: #8edbff;
-}
-.button.violet {
-  background: #b578ce;
-  color: #3d2049;
-}
-.button.violet:hover {
-  background: #de8eff;
 }
 .button:first-of-type {
   z-index: 4;

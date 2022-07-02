@@ -1,15 +1,18 @@
+let state = 0;
 $('.container').on('click', '.button', function() {
-    let clickedButton = $(this);
-    let topCardHolder = $('.card-large');
-    let topCard = topCardHolder.children('.button');
-
-    if(topCardHolder.children().length === 1) {
-        //topCardHolder.prepend(this);
-        topCard.appendTo($('.button-wrap'));
+    let buttons = $('.button');
+    if(state===0){
+        buttons.addClass('expanded');
+        state = 1;
     }
-    else {
-        //topCardHolder.empty();
-        //$('.button-wrap').prepend(topCard);
+    else if(state===1){
+        let clickedButton = $(this);
+        let topCardHolder = $('.card-large');
+        let topCard = topCardHolder.children('.button');
+
+        topCard.appendTo($('.button-wrap'));
         clickedButton.appendTo(topCardHolder);
+        buttons.removeClass('expanded');
+        state = 0;
     }
 });

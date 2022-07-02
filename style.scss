@@ -34,23 +34,21 @@ body {
 .button-wrap {
   @extend %card-holder;
   bottom:-80px;
-  &:hover {
-	.button {
-	  &:nth-of-type(1){
-		transform:translateY(-50px);
-	  }
-	  &:nth-of-type(2){
-		transform:translateY(-150px);
-		width:100%;
-	  }
-	  &:nth-of-type(3){
-		transform:translateY(-250px);
-		width:100%;
-	  }
-	  &:nth-of-type(4){
-		transform:translateY(-350px);
-		width:100%;
-	  }
+  .button.expanded {
+	&:nth-of-type(1){
+	  transform:translateY(-50px);
+	}
+	&:nth-of-type(2){
+	  transform:translateY(-150px);
+	  width:100%;
+	}
+	&:nth-of-type(3){
+	  transform:translateY(-250px);
+	  width:100%;
+	}
+	&:nth-of-type(4){
+	  transform:translateY(-350px);
+	  width:100%;
 	}
   }
 
@@ -69,34 +67,6 @@ body {
 
   &:hover {
 	cursor:pointer;
-  }
-  &.green {
-	background:#7fc77e;
-	color:#537a52;
-	&:hover {
-	  background:#77e475;
-	}
-  }
-  &.yellow {
-	background:#eccc1d;
-	color:#887d40;
-	&:hover {
-	  background:#ffe557;
-	}
-  }
-  &.blue {
-	background:#6dbde2;
-	color:#10678f;
-	&:hover {
-	  background:#8edbff;
-	}
-  }
-  &.violet {
-	background:#b578ce;
-	color:#3d2049;
-	&:hover {
-	  background:#de8eff;
-	}
   }
   &:first-of-type {
 	z-index:4;

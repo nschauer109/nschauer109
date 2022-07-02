@@ -96,7 +96,7 @@ body {
 
 .ticket-extras {
   position: absolute;
-  top: 77%;
+  top: 75%;
   left: 0;
   right: 0;
   margin: auto;
@@ -107,7 +107,8 @@ body {
   border-color: #181818;
 }
 .ticket-extras img {
-  width: 5%;
+  width: 6%;
+  aspect-ratio: 1;
   position: absolute;
   right: 0;
 }

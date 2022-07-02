@@ -11,9 +11,13 @@ $('.container').on('click', '.button', function() {
         topCardHolder.remove();
         $('.container').prepend('<div class="card-large"></div>');
         nfc.css('display', 'none');
+        nfc.css('top', '40%');
         state = 1;
     }
     else if(state===1){
+        if(clickedButton.hasClass('buckeyes')){
+            nfc.css('top', '60%');
+        }
         clickedButton.appendTo(topCardHolder);
         buttons.removeClass('expanded');
         nfc.css('display', 'block');

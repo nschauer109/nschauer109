@@ -11,7 +11,7 @@ body {
   font-family:helvetica neue, helvetica, arial, sans-serif;
   font-weight:200;
   font-size:25px;
-  width:90%;
+  width:92%;
   aspect-ratio: 1.59;
   margin:auto;
   position:absolute;
@@ -25,7 +25,7 @@ body {
 
 .card-large {
   @extend %card-holder;
-  top: 60px;
+  top: 0;
 
   /*.button {
 	box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
@@ -53,6 +53,15 @@ body {
 	}
   }
 
+}
+
+.nfc {
+  position: absolute;
+  bottom: 450px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 45%;
 }
 
 .button {
@@ -93,4 +102,14 @@ body {
 
 .button:not(.buckeyes){
   border-radius:13px;
+}
+
+.grey {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: radial-gradient(circle, rgba(80,80,80,1) 3%, rgba(30,30,30,1) 99%);
+  height:4%;
+  z-index: 999;
 }

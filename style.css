@@ -23,7 +23,7 @@ body {
 }
 
 .card-large {
-  top: 0;
+  top: -20px;
   /*.button {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
    }*/
@@ -50,7 +50,7 @@ body {
 
 .nfc {
   position: absolute;
-  top: 40%;
+  top: 36%;
   left: 0;
   right: 0;
   margin: auto;
@@ -92,6 +92,18 @@ body {
 
 .button:not(.buckeyes) {
   border-radius: 13px;
+}
+
+.ticket-extras {
+  position: absolute;
+  top: 77%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+}
+.ticket-extras hr {
+  border-color: #181818;
 }
 
 .grey {

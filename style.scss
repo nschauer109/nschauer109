@@ -111,9 +111,16 @@ body {
   right: 0;
   margin: auto;
   width: 90%;
+  display: none;
 
   hr {
 	border-color: #181818;
+  }
+
+  img {
+	width: 5%;
+	position: absolute;
+	right: 0;
   }
 }
 

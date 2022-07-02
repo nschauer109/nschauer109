@@ -101,9 +101,15 @@ body {
   right: 0;
   margin: auto;
   width: 90%;
+  display: none;
 }
 .ticket-extras hr {
   border-color: #181818;
+}
+.ticket-extras img {
+  width: 5%;
+  position: absolute;
+  right: 0;
 }
 
 .grey {

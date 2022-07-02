@@ -4,6 +4,7 @@
 
 body {
   overflow: hidden;
+  background: black;
 }
 
 .button-wrap, .card-large {
@@ -62,25 +63,26 @@ body {
 }
 .button:first-of-type {
   z-index: 4;
+  top: 50px;
 }
 .button:nth-of-type(2) {
   z-index: 3;
-  top: -20px;
+  top: 30px;
   width: 95%;
 }
 .button:nth-of-type(3) {
   z-index: 2;
-  top: -40px;
+  top: 10px;
   width: 90%;
 }
 .button:nth-of-type(4) {
   z-index: 1;
-  top: -60px;
+  top: -10px;
   width: 85%;
 }
 
 .button:not(.buckeyes) {
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */

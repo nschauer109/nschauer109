@@ -23,9 +23,9 @@ body {
 
 .card-large {
   top: 60px;
-}
-.card-large .button {
+  /*.button {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+   }*/
 }
 
 .button-wrap {

@@ -5,10 +5,10 @@ $('.container').on('click', '.button', function() {
     let topCardHolder = $('.card-large');
     let topCard = topCardHolder.children('.button');
     if(state===0){
-        buttons.css('display', 'none');
         buttons.addClass('expanded');
         topCard.appendTo($('.button-wrap'));
-        buttons.css('display', 'block');
+        topCardHolder.remove();
+        $('.container').prepend('<div class="card-large"></div>');
         state = 1;
     }
     else if(state===1){

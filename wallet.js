@@ -9,7 +9,7 @@ $('.container').on('click', '.button', function() {
     let extras = $('.ticket-extras');
     if(state===0){
         buttons.addClass('expanded');
-        wrap.css('top', '120px');
+        wrap.css('top', '40px');
         wrap.css('bottom', '');
         topCard.appendTo($('.button-wrap'));
         topCardHolder.remove();

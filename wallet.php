@@ -47,8 +47,8 @@ if(!isset($_POST['submit'])){
         echo 'var gate = "' . $_POST['gate'] . "\";\n";
 
         $datetime = explode('T', $_POST['date']);
-        $date = date('Y-m-d');
-        $time = date('H:i');
+        $date = date_create_from_format('Y-m-d', $datetime[0]);
+        $time = date_create_from_format('H:i', $datetime[1]);
 
         echo 'var date = "' . date_format($date, 'M j, Y') . "\";\n";
         echo 'var time = "' . date_format($time, 'g:i A') . "\";\n";

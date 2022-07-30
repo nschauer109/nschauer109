@@ -39,7 +39,7 @@ $(document).ready(function() {
     let imageObj = new Image();
     imageObj.onload = function(){
         context.drawImage(imageObj, 10, 10);
-        context.font = "47pt SF-Pro";
+        context.font = "47pt SFPro";
         context.fillStyle = 'white';
         context.fillText("ENTER GATE 35", 50, 1000);
     };

@@ -5,6 +5,7 @@
 body {
   overflow: hidden;
   background: black;
+  color: lightgray;
 }
 
 .button-wrap, .card-large {
@@ -121,6 +122,21 @@ body {
   background: radial-gradient(circle, rgb(80, 80, 80) 3%, rgb(30, 30, 30) 99%);
   height: 4%;
   z-index: 999;
+}
+
+form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+}
+form .header {
+  text-align: center;
+}
+form input {
+  background: #ababab;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

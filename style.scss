@@ -5,6 +5,7 @@
 body {
   overflow:hidden;
   background: black;
+  color: lightgray;
 }
 
 %card-holder {
@@ -133,4 +134,21 @@ body {
   background: radial-gradient(circle, rgba(80,80,80,1) 3%, rgba(30,30,30,1) 99%);
   height:4%;
   z-index: 999;
+}
+
+form {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+
+  .header {
+	text-align: center;
+  }
+
+  input {
+	background: #ababab;
+	color: black;
+	padding: 5px;
+	border-radius: 5px;
+  }
 }

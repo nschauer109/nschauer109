@@ -1,3 +1,10 @@
+<?php
+
+if(!isset($_POST['submit'])){
+    header('Location: index.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +36,25 @@
         </div>
         <div class="grey"></div>
     </div>
+    <script>
+        //Global config vars from form
+        <?php
+
+        echo 'var opponent = ' . $_POST['opponent'] . '\n';
+        echo 'var section = ' . $_POST['section'] . '\n';
+        echo 'var row = ' . $_POST['row'] . '\n';
+        echo 'var seat = ' . $_POST['seat'] . '\n';
+        echo 'var gate = ' . $_POST['gate'] . '\n';
+
+        $datetime = explode('T', $_POST['date']);
+        $date = date('Y-m-d');
+        $time = date('H:i');
+
+        echo 'var date = ' . date_format('M j, Y', $date) . '\n';
+        echo 'var time = ' . date_format('g:i A', $time) . '\n';
+
+        ?>
+    </script>
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

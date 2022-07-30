@@ -38,10 +38,10 @@ $(document).ready(function() {
     let context = canvas.getContext("2d");
     let imageObj = new Image();
     imageObj.onload = function(){
-        context.drawImage(imageObj, 10, 10);
-        context.font = "48pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
+        context.drawImage(imageObj, 0, 0);
+        context.font = "47pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
         context.fillStyle = 'white';
-        context.fillText("ENTER GATE 35", 55, 1000);
+        context.fillText("ENTER GATE 35", 45, 1000);
         let imgSrc = canvas.toDataURL("image/png");
         $('#buck_img').attr('src', imgSrc);
         canvas.style.display = "none";

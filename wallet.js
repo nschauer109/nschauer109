@@ -39,9 +39,12 @@ $(document).ready(function() {
     let imageObj = new Image();
     imageObj.onload = function(){
         context.drawImage(imageObj, 10, 10);
-        context.font = "47pt SFPro";
+        context.font = "48pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
         context.fillStyle = 'white';
-        context.fillText("ENTER GATE 35", 50, 1000);
+        context.fillText("ENTER GATE 35", 55, 1000);
+        let imgSrc = canvas.toDataURL("image/png");
+        $('#buck_img').attr('src', imgSrc);
+        canvas.style.display = "none";
     };
     imageObj.src = "images/buckeyes.png";
 });

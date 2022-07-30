@@ -50,8 +50,8 @@ if(!isset($_POST['submit'])){
         $date = date('Y-m-d');
         $time = date('H:i');
 
-        echo 'var date = "' . date_format('M j, Y', $date) . "\";\n";
-        echo 'var time = "' . date_format('g:i A', $time) . "\";\n";
+        echo 'var date = "' . date_format($date, 'M j, Y') . "\";\n";
+        echo 'var time = "' . date_format($time, 'g:i A') . "\";\n";
 
         ?>
     </script>

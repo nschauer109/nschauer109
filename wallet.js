@@ -32,3 +32,16 @@ $('.container').on('click', '.button', function() {
         state = 0;
     }
 });
+
+$(document).ready(function() {
+    let canvas = document.getElementById("buckeyes");
+    let context = canvas.getContext("2d");
+    let imageObj = new Image();
+    imageObj.onload = function(){
+        context.drawImage(imageObj, 10, 10);
+        context.font = "47pt SF-Pro";
+        context.fillStyle = 'white';
+        context.fillText("ENTER GATE 35", 50, 1000);
+    };
+    imageObj.src = "images/buckeyes.png";
+});

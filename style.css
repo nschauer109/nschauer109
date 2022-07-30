@@ -20,6 +20,7 @@ body {
 }
 .button-wrap .buckeyes, .card-large .buckeyes {
   height: auto;
+  overflow: hidden;
 }
 
 .card-large {
@@ -121,6 +122,11 @@ body {
   background: radial-gradient(circle, rgb(80, 80, 80) 3%, rgb(30, 30, 30) 99%);
   height: 4%;
   z-index: 999;
+}
+
+@font-face {
+  font-family: "Sf-Pro";
+  src: url("Sf-Pro.ttf");
 }
 
 /*# sourceMappingURL=style.css.map */

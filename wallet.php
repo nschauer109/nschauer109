@@ -1,10 +1,3 @@
-<?php
-
-if(!isset($_POST['submit'])){
-    header('Location: index.php');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,30 @@
+function runWallet(opponent, section, row, seat, gate, date, time){
+    let canvas = document.getElementById("buckeyes");
+    let context = canvas.getContext("2d");
+    let imageObj = new Image();
+    imageObj.onload = function(){
+        context.drawImage(imageObj, 0, 0);
+        context.font = "47pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
+        context.fillStyle = 'white';
+
+        //using global vars from form
+        context.fillText(date, 700, 130);
+        context.fillText(opponent, 345, 595);
+        context.fillText(section, 45, 735);
+        context.fillText(row, 530, 735);
+        context.fillText(seat, 950, 735);
+        context.fillText(gate, 45, 880);
+
+        context.font = "30pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
+        context.fillText(time, 860, 65);
+
+        let imgSrc = canvas.toDataURL("image/png");
+        $('#buck_img').attr('src', imgSrc);
+        canvas.style.display = "none";
+    };
+    imageObj.src = "images/buckeyes.png";
+}
+
 let state = 0;
 $('.container').on('click', '.button', function() {
     let buttons = $('.button');
@@ -33,29 +60,14 @@ $('.container').on('click', '.button', function() {
     }
 });
 
-$(document).ready(function() {
-    let canvas = document.getElementById("buckeyes");
-    let context = canvas.getContext("2d");
-    let imageObj = new Image();
-    imageObj.onload = function(){
-        context.drawImage(imageObj, 0, 0);
-        context.font = "47pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
-        context.fillStyle = 'white';
+$('#form').on('submit', function(e){
+    $('#form').css('display', 'none');
+    $('.hide').css('display', 'block');
 
-        //using global vars from form
-        context.fillText(date, 700, 130);
-        context.fillText(opponent, 345, 595);
-        context.fillText(section, 45, 735);
-        context.fillText(row, 530, 735);
-        context.fillText(seat, 950, 735);
-        context.fillText(gate, 45, 880);
+    let dt = moment($('#date').val());
+    let date = dt.format('MMM D, YYYY');
+    let time = dt.format('h:mm A');
 
-        context.font = "30pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
-        context.fillText(time, 860, 65);
-
-        let imgSrc = canvas.toDataURL("image/png");
-        $('#buck_img').attr('src', imgSrc);
-        canvas.style.display = "none";
-    };
-    imageObj.src = "images/buckeyes.png";
+    runWallet($('#opponent').val(), $('#section').val(), $('#row').val(), $('#seat').val(), $('#gate').val(), date, time);
+    return false;
 });

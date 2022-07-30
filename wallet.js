@@ -41,7 +41,7 @@ $(document).ready(function() {
         context.drawImage(imageObj, 0, 0);
         context.font = "47pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
         context.fillStyle = 'white';
-        context.fillText("Sep 11, 2021", 670, 125);
+        context.fillText("Sep 11, 2021", 700, 130);
         context.fillText("Oregon", 345, 595);
         context.fillText("35A", 45, 735);
         context.fillText("33", 530, 735);
@@ -49,7 +49,7 @@ $(document).ready(function() {
         context.fillText("ENTER GATE 35", 45, 880);
 
         context.font = "30pt -apple-system, BlinkMacSystemFont, Helvetica, sans-serif";
-        context.fillText("12:00 PM", 860, 60);
+        context.fillText("12:00 PM", 860, 65);
 
         let imgSrc = canvas.toDataURL("image/png");
         $('#buck_img').attr('src', imgSrc);

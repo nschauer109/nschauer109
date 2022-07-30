@@ -40,18 +40,18 @@ if(!isset($_POST['submit'])){
         //Global config vars from form
         <?php
 
-        echo 'var opponent = ' . $_POST['opponent'] . '\n';
-        echo 'var section = ' . $_POST['section'] . '\n';
-        echo 'var row = ' . $_POST['row'] . '\n';
-        echo 'var seat = ' . $_POST['seat'] . '\n';
-        echo 'var gate = ' . $_POST['gate'] . '\n';
+        echo 'var opponent = "' . $_POST['opponent'] . "\";\n";
+        echo 'var section = "' . $_POST['section'] . "\";\n";
+        echo 'var row = "' . $_POST['row'] . "\";\n";
+        echo 'var seat = "' . $_POST['seat'] . "\";\n";
+        echo 'var gate = "' . $_POST['gate'] . "\";\n";
 
         $datetime = explode('T', $_POST['date']);
         $date = date('Y-m-d');
         $time = date('H:i');
 
-        echo 'var date = ' . date_format('M j, Y', $date) . '\n';
-        echo 'var time = ' . date_format('g:i A', $time) . '\n';
+        echo 'var date = "' . date_format('M j, Y', $date) . "\";\n";
+        echo 'var time = "' . date_format('g:i A', $time) . "\";\n";
 
         ?>
     </script>
